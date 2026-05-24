@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jack Trego — Writer</title>
+  <link rel="shortcut icon" type="image/jpg" href="../images/icon 3.ico"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html"><p id="logo">Jack Trego</p></a>
+  </header>
+
+  <div class="site-content">
+
+    <!-- Left: nav -->
+    <div class="col-nav">
+      <nav>
+        <a href="./producer.html">Producer</a>
+        <a href="./writer.html" class="active">Writer</a>
+        <a href="./reader.html">Reader</a>
+        <a href="./about.html">About</a>
+      </nav>
+      <a class="col-nav-email" href="mailto:jackctrego@gmail.com">jackctrego@gmail.com</a>
+    </div>
+
+    <!-- Middle: section list -->
+    <div class="col-mid">
+      <ul id="writing-nav">
+        <li><a href="#" class="writing-link" data-section="poems">Poems</a></li>
+        <li><a href="#" class="writing-link" data-section="essays">Essays</a></li>
+        <li><a href="#" class="writing-link" data-section="research">Research</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: writing content, empty until clicked -->
+    <div class="col-main">
+
+      <div class="writing-panel" id="writing-poems" style="display:none">
+        <div class="writing-section">
+          <ul>
+            <li><a href="https://www.pearl-press.com/lionheart" target="_blank">lying hearts, Pearl Press Issue 6, July 2021</a></li>
+            <li><a href="https://www.pearl-press.com/pause" target="_blank">people in the dark, Pearl Press Issue 12, August 2022</a></li>
+            <li><a href="../documents/Temporary Storage.pdf" target="_blank">Temporary Storage</a></li>
+            <li><a href="../documents/shimmer, shift, reflect.pdf" target="_blank">shimmer, shift, reflect</a></li>
+            <li><a href="../documents/weeks.pdf" target="_blank">Weeks</a></li>
+            <li><a href="../documents/places.pdf" target="_blank">places</a></li>
+            <li><a href="../documents/January 1.pdf" target="_blank">January 1</a></li>
+            <li><a href="../documents/surface-city.pdf" target="_blank">surface-city</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="writing-panel" id="writing-essays" style="display:none">
+        <div class="writing-section">
+          <ul>
+            <li><a href="https://jacktrego.substack.com/" target="_blank">jacktrego.substack.com</a></li>
+            <li><a href="http://publikation.github.io/" target="_blank">Publikation</a>, Summer 2020</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="writing-panel" id="writing-research" style="display:none">
+        <div class="writing-section">
+          <ul>
+            <li><a href="../documents/La psychologie du colonisé dans la littérature post coloniale.pdf" target="_blank">La psychologie du colonisé dans la littérature post/coloniale (Thesis, Spring 2020)</a></li>
+            <li><a href="../documents/A Potentially Significant Split: The French Political Left and the 2017 French Presidential Election.pdf" target="_blank">A Potentially Significant Split: The French Political Left and the 2017 French Presidential Election (Capstone, Fall 2020)</a></li>
+            <li><a href="../documents/La gouvernance en Europe.pdf" target="_blank">La gouvernance en Europe (Spring 2019)</a></li>
+            <li><a href="../documents/The Dialectic of Space, History, and Social Relations: An Applied Case Study of Algiers.pdf" target="_blank">The Dialectic of Space, History, and Social Relations: An Applied Case Study of Algiers (Spring 2018)</a></li>
+            <li><a href="../documents/Threads of Existentialism in the Oeuvre of Samuel Beckett.pdf" target="_blank">Threads of Existentialism in the Œuvre of Samuel Beckett (Fall 2017)</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const writingLinks = document.querySelectorAll('.writing-link');
+    const writingPanels = document.querySelectorAll('.writing-panel');
+
+    writingLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = this.dataset.section;
+
+        writingLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+
+        writingPanels.forEach(p => p.style.display = 'none');
+        const panel = document.getElementById('writing-' + target);
+        if (panel) panel.style.display = 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>

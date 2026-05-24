@@ -1,52 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jack Trego</title>
-    <link rel="shortcut icon" type="image/jpg" href="../images/icon 3.ico"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap" rel="stylesheet">
+  <title>Jack Trego — About</title>
+  <link rel="shortcut icon" type="image/jpg" href="../images/icon 3.ico"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main.css">
 </head>
-
 <body>
-    <nav>
-        <div class="navigationContain">
-            <a href="../index.html"><p id="logo">Jack Trego</p></a>
-            <div class="navLinkContain">
-              <a href="../pages/writing.html" class="navLink">WRITING</a>
-              <a href="../pages/reading.html" class="navLink">READING</a>
-              <a href="../pages/about.html" id="current" class="navLink">ABOUT</a>
-            </div>
+
+  <header class="site-header">
+    <a href="../index.html"><p id="logo">Jack Trego</p></a>
+  </header>
+
+  <div class="site-content">
+
+    <!-- Left: nav -->
+    <div class="col-nav">
+      <nav>
+        <a href="./producer.html">Producer</a>
+        <a href="./writer.html">Writer</a>
+        <a href="./reader.html">Reader</a>
+        <a href="../index.html" class="active">About</a>
+      </nav>
+      <a class="col-nav-email" href="mailto:jackctrego@gmail.com">jackctrego@gmail.com</a>
+    </div>
+
+    <!-- Middle: about sub-sections -->
+    <div class="col-mid">
+      <ul id="about-nav">
+        <li><a href="#" class="about-link active" data-section="bio">Bio</a></li>
+        <li><a href="#" class="about-link" data-section="resume">Resume</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: content -->
+    <div class="col-main">
+
+      <!-- Bio -->
+      <div class="about-panel" id="about-bio">
+        <img src="../images/aboutPic.gif" id="about-pic">
+        <div class="about-body">
+          <p>Hi there! I'm Jack, and I read and write.</p>
+          <p>I write poetry, essays, and short stories (let me slide in your email inbox with <a href="https://jacktrego.substack.com" target="_blank">my Substack here</a>). I also write research papers — on things like shifts in the French political landscape, governance and political integration in the European Union, and the French colonial influence on urbanism in Algiers, Algeria. (I promise I'm not the pretentious Frenchman I'm sounding like)</p>
+          <p>I read a bunch too! I've been tracking my books since 2015, and I'm at 296. The day I hit 300 I'll… probably just keep reading.</p>
+          <p>I also spend many guilt-free and shameless primal hours on Reddit and Youtube watching Arsenal goal highlights in compilations with heavy trap beats, dramatic slo-mo, and weirdly-placed lens flares (<a href="https://www.youtube.com/watch?v=n99APDWftu4" target="_blank">here's an excellent sample for your enjoyment</a>).</p>
+          <p>Finalement, estoy tratando de aprender Español, c'est un peu difficile mais j'avance bien et j'aime bien le défi. If I'm not doing one of the above things, I'm usually trying to improve myself, like with my coffee ritual. So when you contact me, feel free to ask how to improve your coffee game, I got you.</p>
         </div>
-    </nav>
-    <main>
-        <img src="../images/aboutPic.gif" id="aboutPic"> 
-        <p class="contact">
-            Hi there! I’m Jack, and I read and write.
-            <br>
-            <br>I write poetry, essays, and short stories (let me slide in your email inbox with <a href="https://jacktrego.substack.com" target="_blank">my Substack here</a>). I also write research papers — on things like shifts in the French political landscape, governance and political integration in the European Union, and the French colonial influence on urbanism in Algiers, Algeria. (I promise I’m not the pretentious Frenchman I’m sounding like) 
-            <br>
-            <br> I read a bunch too! I’ve been tracking my books since 2015, and I’m at 296. The day I hit 300 I’ll… probably just keep reading.
-            <br>
-            <br> I also spend many guilt-free and shameless primal hours on Reddit and Youtube watching Arsenal goal highlights in compilations with heavy trap beats, dramatic slo-mo, and weirdly-placed lens flares (<a href="https://www.youtube.com/watch?v=n99APDWftu4" target="_blank">here's an excellent sample for your enjoyment</a>). 
-            <br>
-            <br>Finalement, estoy tratando de aprender Español, c’est un peu difficile mais j’avance bien et j'aime bien le défi. If I'm not doing one of the above things, I’m usually trying to improve myself, like with my coffee ritual. So when you contact me, feel free to ask how to improve your coffee game, I got you.
-            <br>
-            <br>
-            <br><a href="mailto:jack.trego98@gmail.com" target="_blank">jack.trego98@gmail.com</a>
-            <br>
-            <br> <a href="https://jacktrego.com/" target="_blank">Copywriting Portfolio</a>
-            <br>
-            <br> <a href="https://www.linkedin.com/in/jtrego/" target="_blank">LinkedIn</a>
-            <br>
-            <br> <a href="../documents/Jack Trego_Resume.pdf" target="_blank">Resume</a>
-            <br>
-            <br> P.S. I'm not a developer but I coded this site myself!
-        </p>
-    </main>
+        <div class="about-links">
+          <a href="mailto:jack.trego98@gmail.com" target="_blank">jack.trego98@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jtrego/" target="_blank">LinkedIn</a>
+          <a href="../documents/Jack Trego_Resume.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+
+      <!-- Model -->
+      <div class="about-panel" id="about-model" style="display:none">
+        <div class="col-mid-inline">
+          <ul id="model-nav">
+            <li><a href="#" class="model-link active" data-model="nofilter">Sorry I Have No Filter</a></li>
+            <li><a href="#" class="model-link" data-model="remnants">Remnants</a></li>
+            <li><a href="#" class="model-link" data-model="others"><em>Others (Please contact)</em></a></li>
+          </ul>
+        </div>
+
+        <div class="model-panel" id="model-nofilter">
+          <p class="project-meta">Campaign · Model</p>
+          <h2 class="project-title">Sorry I Have No Filter</h2>
+          <div class="project-carousel">[ Images coming soon ]</div>
+        </div>
+
+        <div class="model-panel" id="model-remnants" style="display:none">
+          <p class="project-meta">Editorial · Model</p>
+          <h2 class="project-title">Remnants</h2>
+          <div class="project-carousel">[ Images coming soon ]</div>
+        </div>
+
+        <div class="model-panel" id="model-others" style="display:none">
+          <div class="contact-prompt">
+            <p>For additional modeling work please send me an email at <a href="mailto:jack.trego98@gmail.com">jack.trego98@gmail.com</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resume -->
+      <div class="about-panel" id="about-resume" style="display:none">
+        <div class="about-body">
+          <p>Download my resume below, or <a href="mailto:jack.trego98@gmail.com">get in touch</a>.</p>
+        </div>
+        <div class="about-links">
+          <a href="../documents/Jack Trego_Resume.pdf" target="_blank">Resume (PDF)</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const aboutLinks = document.querySelectorAll('.about-link');
+    const aboutPanels = document.querySelectorAll('.about-panel');
+
+    aboutLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = this.dataset.section;
+        aboutLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        aboutPanels.forEach(p => p.style.display = 'none');
+        const panel = document.getElementById('about-' + target);
+        if (panel) panel.style.display = 'block';
+      });
+    });
+
+    const modelLinks = document.querySelectorAll('.model-link');
+    const modelPanels = document.querySelectorAll('.model-panel');
+
+    modelLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = this.dataset.model;
+        modelLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        modelPanels.forEach(p => p.style.display = 'none');
+        const panel = document.getElementById('model-' + target);
+        if (panel) panel.style.display = 'block';
+      });
+    });
+  </script>
+
 </body>
+</html>
